@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(50,50,50);
+background: radial-gradient(circle, rgba(50,50,50,1) 0%, rgba(56,56,56,1) 100%);
+    color: rgb(216, 209, 209);
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+a{
+    color: white;
+}
+
+p{
+    margin: 2rem;
+    text-align: justify;
+}
+
+.estilo-tarjeta-1{
+    border-radius: 30px;
+    background: rgb(54,59,78);
+background: linear-gradient(0deg, rgba(54,59,78,1) 0%, rgba(69,76,99,1) 100%);
+}
+
+.estilo-tarjeta-2{
+    border-radius: 30px;
+    background: rgb(79,59,120);
+background: linear-gradient(0deg, rgba(79,59,120,1) 0%, rgba(94,72,136,1) 100%);
+}
+
+.estilo-tarjeta-3{
+    border-radius: 30px;
+    background-color: #38353a;
+}
+
+.estilo-tarjeta-4{
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #222;
+}
+
+.grid-2-columnas{
+    grid-column: span 2;
+}
+
+.forma-main{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+
+.columnas{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr 2fr;
+}
+
+.columnas-ext{
+    grid-template-columns: 1fr 1fr;
+}
+
+.columna{
+    display: grid;
+    grid-template-columns: 2fr;
+}
+
+.estilo-caja{
+    text-align: center;
+}
+
+.hidden{
+    opacity: 0;
+    transform: translateY(20%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+}
